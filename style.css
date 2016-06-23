@@ -61,6 +61,41 @@ ul#mobile_menu.et_mobile_menu {
 .op-img-box-shadow img  {
   box-shadow: 2px 4px 2px #444, -2px 4px 2px #444;
 }
+/* FULLWIDTH MENU HOVER*/
+.cssmenu-1 ul:after {
+  content: " ";
+  display: block;
+  font-size: 0;
+  height: 0;
+  clear: both;
+  visibility: hidden;
+}
+.cssmenu-1 ul li {
+  display: inline-block;
+  padding: 0;
+  margin: 0;
+}
+.cssmenu-1 ul li a:hover {
+  color: #000 !important;
+}
+.cssmenu-1 ul li a:hover:before {
+  width: 100%;
+}
+.cssmenu-1 ul li a:before {
+  content: "";
+  display: block;
+  position: absolute;
+  left: 0;
+  bottom: 0;
+  height: 3px;
+  width: 0;
+  background: #000;
+  -webkit-transition: width .25s;
+  -moz-transition: width .25s;
+  -ms-transition: width .25s;
+  -o-transition: width .25s;
+  transition: width .25s;
+}
 /* Responsive Styles Large Desktop And Above */
 @media all and (min-width: 1405px) {
   .fancy-title h2 {
@@ -284,17 +319,29 @@ ul.et_pb_social_media_follow {
    -moz-box-shadow: 0 8px 12px -6px black;
    box-shadow: 0 8px 12px -6px black;
 }
-.lifted {
+.box-shadow-top-inset-section {
+    position:relative;
+    background:#fff;
+    -webkit-box-shadow:0 1px 4px rgba(0, 0, 0, 0.3), 0 0 40px rgba(0, 0, 0, 0.1) inset;
+       -moz-box-shadow:0 1px 4px rgba(0, 0, 0, 0.3), 0 0 40px rgba(0, 0, 0, 0.1) inset;
+            box-shadow:0 1px 4px rgba(0, 0, 0, 0.3), 0 0 40px rgba(0, 0, 0, 0.1) inset;
+}
+.box-shadow-top-inset-section:before,
+.box-shadow-top-inset-section:after {
+    content:"";
+    position:absolute; 
+    z-index:-2;
+}
+.lifted-corners {
     -moz-border-radius:4px;
          border-radius:4px;
 }
-
-.lifted:before,
-.lifted:after {
-    bottom:15px;
+.lifted-corners:before,
+.lifted-corners:after {
+    bottom:25px;
     left:10px;
     width:50%;
-    height:20%;
+    height:10%;
     max-width:400px;
     -webkit-box-shadow:0 20px 10px rgba(0, 0, 0, 0.7);
        -moz-box-shadow:0 20px 10px rgba(0, 0, 0, 0.7);
@@ -304,8 +351,11 @@ ul.et_pb_social_media_follow {
         -ms-transform:rotate(-3deg);
          -o-transform:rotate(-3deg);
             transform:rotate(-3deg);
+   content:"";
+    position:absolute; 
+    z-index:-2;
 }
-.lifted:after {
+.lifted-corners:after {
     right:10px;
     left:auto;
     -webkit-transform:rotate(3deg);
