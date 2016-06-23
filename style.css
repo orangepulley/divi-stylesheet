@@ -393,13 +393,3 @@ li.et-social-rss a:hover {
 .shake {
         display:inline-block
 }
-.op-page-header h1 {
-  padding: 20px 0 0 0 ;
-  text-transform:uppercase;
-}
-.op-search {
-  padding: 0 0 20px 0;
-}
-.page-content *, .op-page-header h1 {
-  text-align:center;
-}
