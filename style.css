@@ -55,27 +55,6 @@ ul#mobile_menu.et_mobile_menu {
  background-color: #222;
  margin: 30px auto;
 }
-img.centered {
-  display:block;
-  margin-left : auto;
-  margin-right: auto;
-}
-.box-shadow-transition img {
-   -webkit-transition: all 0.50s ease-in-out;
-  -moz-transition: all 0.50s ease-in-out;
-  -ms-transition: all 0.50s ease-in-out;
-  -o-transition: all 0.50s ease-in-out;
-}
-.box-shadow-below img {
-  -webkit-box-shadow: 0 8px 12px -6px black;
-   -moz-box-shadow: 0 8px 12px -6px black;
-   box-shadow: 0 8px 12px -6px black;
-}
-.box-shadow-below-hover img:hover {
-  -webkit-box-shadow: 0 12px 18px -6px black;
-     -moz-box-shadow: 0 12px 18px -6px black;
-          box-shadow: 0 12px 18px -6px black;
-}
 .op-box-shadow {
   box-shadow: 4px 8px 5px #444, -4px 8px 5px #444;
 }
@@ -200,6 +179,24 @@ img.centered {
   border-radius: 10px; /* future proofing */
   -khtml-border-radius: 10px; /* for old Konqueror browsers */
 }
+/* IMAGE STUFF HERE */
+.box-shadow-transition img {
+   -webkit-transition: all 0.50s ease-in-out;
+  -moz-transition: all 0.50s ease-in-out;
+  -ms-transition: all 0.50s ease-in-out;
+  -o-transition: all 0.50s ease-in-out;
+}
+.box-shadow-below img {
+  -webkit-box-shadow: 0 8px 12px -6px black;
+   -moz-box-shadow: 0 8px 12px -6px black;
+   box-shadow: 0 8px 12px -6px black;
+}
+.box-shadow-below-hover img:hover {
+  -webkit-box-shadow: 0 12px 18px -6px black;
+     -moz-box-shadow: 0 12px 18px -6px black;
+          box-shadow: 0 12px 18px -6px black;
+}
+/* IMAGE ANIMATIONS START */
 .op_rotate img:hover {
     -webkit-transform:rotate(-270deg);
     -moz-transform:rotate(-270deg);
@@ -222,6 +219,7 @@ img.centered {
     -webkit-transform: skew(30deg,20deg); /* Chrome, Safari, Opera */
     transform: skew(30deg,20deg);
 }
+/* IMAGE ANIMATIONS END */
 /* CENTER SOCIAL MEDIA ICONS START */
 ul.et_pb_social_media_follow {
   width:100%;
