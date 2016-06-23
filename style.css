@@ -266,18 +266,23 @@ ul.et_pb_social_media_follow {
         0 20px 0 -10px #eee, /* The third layer */
         0 20px 1px -9px rgba(0,0,0,0.15); /* The third layer shadow */
 }
-.drop-shadow {
+.box-shadow-inset {
     position:relative;
     background:#fff;
     -webkit-box-shadow:0 1px 4px rgba(0, 0, 0, 0.3), 0 0 40px rgba(0, 0, 0, 0.1) inset;
        -moz-box-shadow:0 1px 4px rgba(0, 0, 0, 0.3), 0 0 40px rgba(0, 0, 0, 0.1) inset;
             box-shadow:0 1px 4px rgba(0, 0, 0, 0.3), 0 0 40px rgba(0, 0, 0, 0.1) inset;
 }
-.drop-shadow:before,
-.drop-shadow:after {
+.box-shadow-inset:before,
+.box-shadow-inset:after {
     content:"";
     position:absolute;
     z-index:-2;
+}
+.box-shadow-basic {
+   -webkit-box-shadow: 0 8px 12px -6px black;
+   -moz-box-shadow: 0 8px 12px -6px black;
+   box-shadow: 0 8px 12px -6px black;
 }
 .lifted {
     -moz-border-radius:4px;
