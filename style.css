@@ -11,7 +11,7 @@
 /* =Theme customization starts here
 ------------------------------------------------------- */
 /* use font-awesome icons in contact form information */
-.contact-contact-icons:before {
+.contact-media:before {
   position: relative;
   margin-right: 4px;
   font-family: 'ETmodules';
