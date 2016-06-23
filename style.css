@@ -11,24 +11,24 @@
 /* =Theme customization starts here
 ------------------------------------------------------- */
 /* use font-awesome icons in contact form information */
-.op-contact-icons:before {
+.contact-contact-icons:before {
   position: relative;
   margin-right: 4px;
   font-family: 'ETmodules';
 }
-.op-address:before {
+.contact-address:before {
   content: "\e009";
 }
-.op-media {
+.contact-media {
   margin-bottom: 2px;
 }
-.op-phone:before {
+.contact-phone:before {
   content: "\e090";
 }
-.op-email:before {
+.contact-email:before {
   content: "\e010";
 }
-.op-fax:before {
+.contact-fax:before {
   content: "\e103";
 }
 /* remove text-shadow on .et-fixed-header #top-menu-nav */
