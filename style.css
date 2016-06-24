@@ -152,6 +152,37 @@ ul#mobile_menu.et_mobile_menu {
 	-moz-transform: translateY(0px);
 	transform: translateY(0px);
 }
+/* Effect 13: three circles */
+.cssmenu-3 a {
+	-webkit-transition: color 0.3s;
+	-moz-transition: color 0.3s;
+	transition: color 0.3s;
+}
+.cssmenu-3 a::before {
+	position: absolute;
+	top: 35%;
+	left: 50%;
+	color: transparent;
+	content: '.';
+	text-shadow: 0 0 transparent; 
+	font-size: 2.0em;
+	-webkit-transition: text-shadow 0.3s, color 0.3s;
+	-moz-transition: text-shadow 0.3s, color 0.3s;
+	transition: text-shadow 0.3s, color 0.3s;
+	-webkit-transform: translateX(-50%);
+	-moz-transform: translateX(-50%);
+	transform: translateX(-50%);
+	pointer-events: none;
+}
+.cssmenu-3 a:hover::before,
+.cssmenu-3 a:focus::before {
+	color: #222;
+	text-shadow: 10px 0 #222, -10px 0 #222;
+}
+.cssmenu-3 a:hover,
+.cssmenu-3 a:focus {
+	color: #222;
+}
 /* Responsive Styles Large Desktop And Above */
 @media all and (min-width: 1405px) {
   .fancy-title h2 {
