@@ -10,6 +10,17 @@
 
 /* =Theme customization starts here
 ------------------------------------------------------- */
+/* BOUNCING DOWN ARROW */
+.bounce-down-arrow span.scroll-down.et-pb-icon { 
+  -webkit-animation-name: bounce;
+  animation-name: bounce;
+  -webkit-animation-duration: 1s;
+  animation-duration: 1s;
+  -webkit-animation-fill-mode: both;
+  animation-fill-mode: both;
+  -webkit-animation-iteration-count: infinite;
+  animation-iteration-count: infinite;
+}
 /* use font-awesome icons in contact form information */
 .contact-media:before {
   position: relative;
@@ -447,4 +458,34 @@ li.et-social-rss a:hover {
 }
 .shake {
         display:inline-block
+}
+/* BOUNCING MORE ICON */
+ 
+@-webkit-keyframes bounce {
+  0%, 100% {
+   -moz-transform: translateY(0);
+   -ms-transform: translateY(0);
+   -webkit-transform: translateY(0);
+   transform: translateY(0);
+  }
+  40% {
+   -moz-transform: translateY(-10px);
+   -ms-transform: translateY(-10px);
+   -webkit-transform: translateY(-10px);
+   transform: translateY(-10px);
+  }
+}
+@keyframes bounce {
+  0%, 100% {
+   -moz-transform: translateY(0);
+   -ms-transform: translateY(0);
+   -webkit-transform: translateY(0);
+   transform: translateY(0);
+  }
+  40% {
+   -moz-transform: translateY(-10px);
+   -ms-transform: translateY(-10px);
+   -webkit-transform: translateY(-10px);
+   transform: translateY(-10px);
+  }
 }
