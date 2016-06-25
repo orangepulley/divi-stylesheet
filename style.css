@@ -10,6 +10,15 @@
 
 /* =Theme customization starts here
 ------------------------------------------------------- */
+/* BAR COUNTERS STYLING START */
+.linear-gradient span.et_pb_counter_amount {
+  background: #BF1959; /* For browsers that do not support gradients */
+  background: -webkit-linear-gradient(left, #75002D, #BF1959 ); /* For Safari 5.1 to 6.0 */
+  background: -o-linear-gradient(right, #75002D, #BF1959); /* For Opera 11.1 to 12.0 */
+  background: -moz-linear-gradient(right, #75002D, #BF1959); /* For Firefox 3.6 to 15 */
+  background: linear-gradient(to right, #75002D, #BF1959); /* Standard syntax */
+}
+/* BAR COUNTER STYLING END */
 /* BOUNCING DOWN ARROW */
 .bounce-down-arrow span.scroll-down.et-pb-icon { 
   -webkit-animation-name: bounce;
