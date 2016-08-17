@@ -10,6 +10,32 @@
 
 /* =Theme customization starts here
 ------------------------------------------------------- */
+/* ==========================================================================
+IMAGE ZOOM FEATURE
+CREDITS https://elegantchildthemes.com/add-image-zoom-effect-divi/
+========================================================================== */
+.zoomImage {
+  overflow: hidden;
+  -webkit-backface-visibility: hidden;
+  -webkit-transform: translateZ(0) scale(1.0, 1.0);
+}
+.zoomImage img {
+  vertical-align: bottom;
+  -webkit-transition: -webkit-transform 0.5s ease;
+  -moz-transition: -moz-transform 0.5s ease;
+  -o-transition: -o-transform 0.5s ease;
+  transition: transform 0.5s ease;
+}
+.zoomImage img:hover {
+  -webkit-transform: scale(1.1);
+  -moz-transform: scale(1.1);
+  -ms-transform: scale(1.1);
+  -o-transform: scale(1.1);
+  transform: scale(1.1);
+}
+/* ==========================================================================
+  END IMAGE ZOOM FEATURE
+  ========================================================================== */
 /* BAR COUNTERS STYLING START */
 .linear-gradient span.et_pb_counter_amount {
   background: #BF1959; /* For browsers that do not support gradients */
